@@ -15,14 +15,14 @@
         const feedback = document.getElementById("feedback");
         const resultado = document.querySelector(".resultado");
 
-        // Iniciar quiz
+        
         btnIniciar.addEventListener("click", () => {
             telaInicial.style.display = "none";
             telaPergunta.style.display = "block";
             carregarPergunta();
         });
 
-        // Carregar pergunta
+        
         function carregarPergunta() {
             feedback.textContent = "";
             btnProximo.style.display = "none";
@@ -44,7 +44,7 @@
             });
         }
 
-        // Enviar resposta
+        
         btnEnviar.addEventListener("click", () => {
             let respostaSelecionada = document.querySelector("input[name='opcao']:checked");
             if (!respostaSelecionada) {
@@ -66,7 +66,7 @@
             btnProximo.style.display = "inline-block";
         });
 
-        // Próxima pergunta
+        
         btnProximo.addEventListener("click", () => {
             indiceAtual++;
             if (indiceAtual < perguntas.length) {
@@ -76,14 +76,14 @@
             }
         });
 
-        // Mostrar resultado final
+        
         function mostrarResultado() {
             telaPergunta.style.display = "none";
             telaFinal.style.display = "block";
             resultado.textContent = `Você acertou ${pontuacao} de ${perguntas.length} perguntas.`;
         }
 
-        // Reiniciar quiz
+        
         btnReiniciar.addEventListener("click", () => {
             indiceAtual = 0;
             pontuacao = 0;

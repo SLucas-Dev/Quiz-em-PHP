@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    background-color: #f0f0f0;
+    background-image: url("imagem.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.quiz-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+
+.tela-inicial, .tela-pergunta, .tela-final {
+    margin-top: 20px;
+}
+
+
+.opcoes {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+}
+
+.opcoes li {
+    margin-bottom: 10px;
+}
+
+.opcoes label {
+    display: block;
+    background-color: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.opcoes label:hover {
+    background-color: #dee2e6;
+}
+
+.opcoes input[type="radio"] {
+    margin-right: 10px;
+}
+
+
+.btn-iniciar, .btn-enviar, .btn-proximo, .btn-reiniciar {
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-iniciar, .btn-proximo, .btn-reiniciar {
+    background-color: #007bff;
+}
+
+.btn-enviar {
+    background-color: #28a745;
+}
+
+.btn-iniciar:hover, .btn-proximo:hover, .btn-reiniciar:hover {
+    background-color: #0056b3;
+}
+
+.btn-enviar:hover {
+    background-color: #218838;
+}
+
+
+.correto {
+    color: #28a745;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.incorreto {
+    color: #dc3545;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.resultado {
+    margin-top: 20px;
+}

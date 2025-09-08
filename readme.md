@@ -53,6 +53,7 @@ Coloque os arquivos na pasta do servidor local (ex: htdocs).
 
 Acesse no navegador:
 
-http://localhost/###/
+http://localhost/nomedoarquivo/
 
 Clique em Iniciar Quiz e comece a responder.
+
